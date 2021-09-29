@@ -1,0 +1,20 @@
+For the ULLMap, there is a stack overflow of adding 100000 strings of length 10.
+For the HashMap, it takes 0.16 seconds to input 100000 strings of length 10.
+For the Java's HashMap, it takes 0.04 seconds to input 100000 strings of length 10.
+
+It would be better to use a BSTMap/TreeMap instead of a HashMap when there is a specific order that we want to keep the objects that we are storing in.
+A HashMap does not care about the order of the objects that we want to store in the data structure.
+
+Inserting 100000 strings of length 10 into the different types of buckets takes different times.
+For ArrayList, it takes 0.16 seconds.
+For a LinkedList, it takes 0.18 seconds.
+For a TreeSet, it takes 0.30 seconds.
+For a HashSet, it takes 0.31 seconds.
+For a PriorityQueue, it takes 0.23 seconds.
+
+Lists seem to takes the shortest time due to the fact that they need to only resize and lengthen, easy to grab the items.
+The sets and queue take the longest since it has to compare and traverse all nodes.
+HashSet takes even longer because there are hashmaps inside each bucket of the hashmap itself.
+
+Both HashSet and TreeSet would be significantly faster with a constant search time and a logarithmic search.
+
