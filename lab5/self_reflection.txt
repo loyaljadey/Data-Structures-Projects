@@ -1,0 +1,63 @@
+You must answer at least 4 questions, but the remaining ones are optional. The main goal of this file is to get you thinking critically about your own work, but we will also use these self reflections at the end of the semester when we do our internal review of the course.
+
+ArrayDeque:
+
+Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
+
+A: The using of more helper methods to get rid of redundancy and prevent any future changes from breaking the code.
+
+Q: What's something you felt proud of in your code, if anything?
+
+A: Figuring out the get method by drawing a diagram. Shortened it originally from 10 to 3 lines. Also the resize method from arraycopy to just placing them in line in order.
+
+Q: What's something that was particularly inelegant in your code, if anything?
+
+A: The wrapping method in the instructor's solution was missing from mine to every time that I had to wrap the index, I just rewrote the same line over and over again.
+
+Q: What did you learn by talking to your partner about writing ArrayDeque?
+
+A: That efficiency is key and making sure the pointers that keep track of the next and last positions.
+
+Q: What do you wish you would have known before writing ArrayDeque, if anything?
+
+A: How to do modulus for the wrapper because I was running into the negative index issues. 
+
+Q: If you wrote ArrayDeque again, what would you do differently, if anything?
+
+A: I would start the get, then go on to the add and removes, then resize, then clean up any redundancies.
+
+-----
+
+LinkedListDeque:
+
+Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
+
+A: The constructor only taking in the item and not the nextNode and prevNode positions as well.
+
+Q: What's something you felt proud of in your code, if anything?
+
+A: The get recursive and its helper. Always struggled with recursion but managed to figure out that I need to keep track of the node item as well as decreasing the counter index.
+
+Q: What's something that was particularly inelegant in your code, if anything?
+
+A: Code is clean, much better than ArrayDeque.
+
+Q: What did you learn by talking to your partner about writing LinkedListDeque?
+
+A: That the LLD should have a getrecursive method just to make the runtime quicker.
+
+Q: What do you wish you would have known before writing LinkedListDeque, if anything?
+
+A: That it was not as hard as it seems. I over thought its complexity at the beginning.
+
+Q: If you wrote LinkedListDeque again, what would you do differently, if anything?
+
+A: Nothing to change.
+
+-----
+
+Meta:
+
+Q: Did you like this design review process? Anything we should do differently next time?
+
+A: This design review process is informative to see what we could do better in our code compared to code that is optimized. Nothing to change. Good coverage of the elements that are needed to make this project easier and better to code. 
